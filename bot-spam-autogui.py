@@ -5,12 +5,12 @@ import time
 pyautogui.setKeyboardLayout("azerty")
 
 
-# BOT avec recherche d'image statique:
-x, y = pyautogui.locateCenterOnScreen("discord_field.PNG")
+# BOT with static image search:
+x, y = pyautogui.locateCenterOnScreen("IMAGE_SEARCH.PNG")
 print(x)
 print(y)
 
-with open("dico_jeux_discord.txt", "r") as f:
+with open("WORDS_FILES.txt", "r") as f:
 	jeux = []
 	for j in f:
 		jeux = j.split(" ")
@@ -24,16 +24,16 @@ with open("dico_jeux_discord.txt", "r") as f:
 
 
 
-# BOT avec recherche d'image en mouvement:
-with open("dico_jeux_discord.txt", "r") as f:
+# BOT with moving image search:
+with open("WORDS_FILES.tx", "r") as f:
 	jeux = []
 	for j in f:
 		jeux = j.split(" ")
 	for g in jeux:
-		coords = pyautogui.locateOnScreen("discord_field.PNG")
+		coords = pyautogui.locateOnScreen("IMAGE_SEARCH.PNG")
 
-		while coords == None: # Vérifier si l'image a été trouvé !!
-			coords = pyautogui.locateOnScreen("discord_field.PNG")
+		while coords == None: # Check if the image has been found !!
+			coords = pyautogui.locateOnScreen("IMAGE_SEARCH.PNG")
 			print(coords)
 
 		x, y = pyautogui.center(coords)
