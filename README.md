@@ -4,7 +4,7 @@ Create bot with pyautogui
 # Different variants:
 
 1. BOT with static image search:
-		- First, the bot search the desired image.
+	- First, the bot search the desired image.
   	- Then, he clicks on this image.
   	- Finally, he runs a spam function with a variable for the time (with time.sleep).
    
