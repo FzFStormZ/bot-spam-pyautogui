@@ -2,7 +2,7 @@ import pyautogui
 import time
 
 
-pyautogui.setKeyboardLayout("azerty")
+pyautogui.setKeyboardLayout("azerty") # If you want "qwerty", delete this line !!
 
 
 # BOT with static image search:
